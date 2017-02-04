@@ -1,6 +1,6 @@
 <% content_for :nav do %>
-              <!-- Navigation
-    ==========================================-->
+    <!-- Navigation
+==========================================-->
     <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -12,7 +12,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/" style="margin-top: -15px;">
-              <%= image_tag "w-mjenzi-logo-2.png" %>
+            <%= image_tag "w-mjenzi-logo-2.png" %>
           </a>
         </div>
 
@@ -31,477 +31,509 @@
       </div><!-- /.container-fluid -->
     </nav>
 <% end %>
-      
-    <!-- Home Page
-    ==========================================-->
-    <div id="tf-home" class="text-center">
-        <div class="overlay">
-            <div class="content">
-                <h1><strong><span class="color">Mjenzi</span></strong>, in Swahili means builder.  </h1>
-                <p class="lead">We are in the business of building web technologies and enabling connectivity</p>
-                <p class="lead">We deliver customised web development solutions primarily on the backbone of the Ruby on Rails framework. </p>
-                <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
-            </div>
-        </div>
+
+<!-- Home Page
+==========================================-->
+<div id="tf-home" class="text-center">
+  <div class="overlay">
+    <div class="content">
+      <h1><strong><span class="color">Mjenzi</span></strong>, in Swahili means builder. </h1>
+      <p class="lead">We are in the business of building web technologies and enabling connectivity</p>
+      <p class="lead">We deliver customised web development solutions primarily on the backbone of the Ruby on Rails
+        framework. </p>
+      <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
     </div>
-    <!-- About Us Page
-    ==========================================-->
-    <div id="tf-about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                 <%= image_tag '02.png', class:  "img-responsive" %>
-                </div>
-                <div class="col-md-6">
-                    <div class="about-text">
-                        <div class="section-title">
-                            <h4>About us</h4>
-                            <h2>WHAT IS OUR ETHOS AT MJENZI</h2>
-                            <hr>
-                            <div class="clearfix"></div>
-                        </div>
-                        <p class="intro">Our approach to IT development evolves around these 5 facets: </p>
-                        <ul class="about-list">
-                            <li>
-                                <span class="fa fa-dot-circle-o"></span>
-                                <strong>Scalability</strong> - <em>key to transformative businesses is their ability to scale up and we at Mjenzi understand the need for IT developments to be scalable</em>
-                            </li>
-                            <li>
-                                <span class="fa fa-dot-circle-o"></span>
-                                <strong>Quality outcomes</strong> - <em>we do not compromise on quality as we know and value product integrity</em>
-                            </li>
-                            <li>
-                                <span class="fa fa-dot-circle-o"></span>
-                                <strong>Client focus</strong> - <em>our main focus is to satisfy our clientele and at Mjenzi we invest heavily on customer satisfaction</em>
-                            </li>
-                            <li>
-                                <span class="fa fa-dot-circle-o"></span>
-                                <strong>Cutting edge technologies</strong> - <em>we are at the forefront of emerging technologies as we endeavour to provide quality and efficient solutions to our clients</em>
-                            </li>
-                            <li>
-                                <span class="fa fa-dot-circle-o"></span>
-                                <strong>Great communication </strong> - <em>communication is key to our project delivery and we pride ourselves in developing great relationships that enable feedback and iterative development</em>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  </div>
+</div>
+<!-- About Us Page
+==========================================-->
+<div id="tf-about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <%= image_tag '02.png', class: "img-responsive" %>
+      </div>
+      <div class="col-md-6">
+        <div class="about-text">
+          <div class="section-title">
+            <h4>About us</h4>
+            <h2>WHAT IS OUR ETHOS AT MJENZI</h2>
+            <hr>
+            <div class="clearfix"></div>
+          </div>
+          <p class="intro">Our approach to IT development evolves around these 5 facets: </p>
+          <ul class="about-list">
+            <li>
+              <span class="fa fa-dot-circle-o"></span>
+              <strong>Scalability</strong> -
+              <em>key to transformative businesses is their ability to scale up and we at Mjenzi understand the need for
+                IT developments to be scalable</em>
+            </li>
+            <li>
+              <span class="fa fa-dot-circle-o"></span>
+              <strong>Quality outcomes</strong> -
+              <em>we do not compromise on quality as we know and value product integrity</em>
+            </li>
+            <li>
+              <span class="fa fa-dot-circle-o"></span>
+              <strong>Client focus</strong> -
+              <em>our main focus is to satisfy our clientele and at Mjenzi we invest heavily on customer
+                satisfaction</em>
+            </li>
+            <li>
+              <span class="fa fa-dot-circle-o"></span>
+              <strong>Cutting edge technologies</strong> -
+              <em>we are at the forefront of emerging technologies as we endeavour to provide quality and efficient
+                solutions to our clients</em>
+            </li>
+            <li>
+              <span class="fa fa-dot-circle-o"></span>
+              <strong>Great communication </strong> -
+              <em>communication is key to our project delivery and we pride ourselves in developing great relationships
+                that enable feedback and iterative development</em>
+            </li>
+          </ul>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Team Page
+==========================================-->
+<div id="tf-team" class="text-center">
+  <div class="overlay">
+    <div class="container">
+      <div class="section-title center">
+        <h2>Meet <strong>our team</strong></h2><br>
+        <small>
+          <em>Mjenzi is made up of dedicated project managers and developers who will take you through your customer
+            journey as you specify. We have interests in developing scalable businesses and being at the forefront of
+            the smartest technologies.</em></small>
+        <div class="line">
+          <hr>
+        </div>
+      </div>
+      <div id="team" class="owl-carousel owl-theme row">
+        <div class="item">
+          <div class="thumbnail">
+            <%= image_tag 'team/01.jpg', class: "img-circle team-img" %>
+            <div class="caption">
+              <h3>Jenn Gwapa</h3>
+              <p>CEO / Founder</p>
+              <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="thumbnail">
+            <%= image_tag 'team/02.jpg', class: "img-circle team-img" %>
+            <div class="caption">
+              <h3>Jenn Gwapa</h3>
+              <p>CEO / Founder</p>
+              <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Services Section
+==========================================-->
+<div id="tf-services" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Take a look at <strong>our services</strong></h2>
+      <div class="line">
+        <hr>
+      </div>
+      <div class="clearfix"></div>
+      <small><em>Mjenzi is made up of dedicated project managers and developers who will take you through your customer
+        journey as you specify. We have interests in developing scalable businesses and being at the forefront of the
+        smartest technologies.</em></small>
+    </div>
+    <div class="space"></div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 service">
+        <a href="/web-application-development">
+          <i class="fa fa-desktop"></i>
+          <h4><strong>Web design</strong></h4>
+        </a>
+        <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+      </div>
+
+      <div class="col-md-3 col-sm-6 service">
+        <a href="/internet-of-things"><i class="fa fa-mobile"></i>
+          <h4><strong>Mobile Apps</strong></h4>
+        </a>
+        <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+      </div>
+
+      <div class="col-md-3 col-sm-6 service">
+        <a href="/digital-strategy-consulting"><i class="fa fa-camera"></i>
+          <h4><strong>Photography</strong></h4>
+        </a>
+        <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+      </div>
+
+      <div class="col-md-3 col-sm-6 service">
+        <a href="/big-data-analytics">
+          <i class="fa fa-bullhorn"></i>
+          <h4><strong>Marketing</strong></h4>
+        </a>
+        <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Clients Section
+==========================================-->
+
+<!--
+<div id="tf-clients" class="text-center">
+  <div class="overlay">
+    <div class="container">
+
+      <div class="section-title center">
+        <h2>Some of <strong>our Clients</strong></h2>
+        <div class="line">
+          <hr>
+        </div>
+      </div>
+      <div id="clients" class="owl-carousel owl-theme">
+        <% #(1..7).each do |item| %>
+            <div class="item">
+              <% # image_tag "client/0#{item}.png" %>
+            </div>
+        <% # end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+-->
+
+<!-- Portfolio Section
+==========================================-->
+
+<!--
+<div id="tf-works">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Take a look at <strong>our services</strong></h2>
+      <div class="line">
+        <hr>
+      </div>
+      <div class="clearfix"></div>
+      <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>
+    </div>
+    <div class="space"></div>
+
+    <div class="categories">
+
+      <ul class="cat">
+        <li class="pull-left"><h4>Filter by Type:</h4></li>
+        <li class="pull-right">
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">All</a></li>
+            <li><a href="#" data-filter=".web">Web Design</a></li>
+            <li><a href="#" data-filter=".photography">Photography</a></li>
+            <li><a href="#" data-filter=".app" >Mobile App</a></li>
+            <li><a href="#" data-filter=".branding" >Branding</a></li>
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
     </div>
 
-    <!-- Team Page
-    ==========================================-->
-    <div id="tf-team" class="text-center">
-        <div class="overlay">
-            <div class="container">
-                <div class="section-title center">
-                    <h2>Meet <strong>our team</strong></h2><br>
-                    <small><em>Mjenzi is made up of dedicated project managers and developers who will take you through your customer journey as you specify. We have interests in developing scalable businesses and being at the forefront of the smartest technologies.</em></small>
-                    <div class="line">
-                        <hr>
-                    </div>
-                </div>
-                <div id="team" class="owl-carousel owl-theme row">
-                    <div class="item">
-                        <div class="thumbnail">
-                            <%= image_tag 'team/01.jpg', class:  "img-circle team-img" %>
-                            <div class="caption">
-                                <h3>Jenn Gwapa</h3>
-                                <p>CEO / Founder</p>
-                                <p>Do not seek to change what has come before. Seek to create that which has not.</p>
-                            </div>
-                        </div>
-                    </div>
+    <div id="lightbox" class="row">
 
-                    <div class="item">
-                        <div class="thumbnail">
-                             <%= image_tag 'team/02.jpg', class:  "img-circle team-img" %>
-                            <div class="caption">
-                                <h3>Jenn Gwapa</h3>
-                                <p>CEO / Founder</p>
-                                <p>Do not seek to change what has come before. Seek to create that which has not.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="thumbnail">
-                            <%= image_tag 'team/03.jpg', class:  "img-circle team-img" %>
-                            <div class="caption">
-                                <h3>Jenn Gwapa</h3>
-                                <p>CEO / Founder</p>
-                                <p>Do not seek to change what has come before. Seek to create that which has not.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="thumbnail">
-                          <%= image_tag 'team/04.jpg', class:  "img-circle team-img" %>
-                            <div class="caption">
-                                <h3>Jenn Gwapa</h3>
-                                <p>CEO / Founder</p>
-                                <p>Do not seek to change what has come before. Seek to create that which has not.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="thumbnail">
-                            <%= image_tag 'team/04.jpg', class:  "img-circle team-img",alt: "..." %>
-                            <div class="caption">
-                                <h3>Jenn Gwapa</h3>
-                                <p>CEO / Founder</p>
-                                <p>Do not seek to change what has come before. Seek to create that which has not.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="thumbnail">
-                            <%= image_tag 'team/01.jpg', class:  "img-circle team-img",alt: "..." %>
-                            <div class="caption">
-                                <h3>Jenn Gwapa</h3>
-                                <p>CEO / Founder</p>
-                                <p>Do not seek to change what has come before. Seek to create that which has not.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="thumbnail">
-                            <%= image_tag 'team/02.jpg', class:  "img-circle team-img",alt: "..." %>
-                            <div class="caption">
-                                <h3>Jenn Gwapa</h3>
-                                <p>CEO / Founder</p>
-                                <p>Do not seek to change what has come before. Seek to create that which has not.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="thumbnail">
-                            <%= image_tag 'team/03.jpg', class:  "img-circle team-img",alt: "..." %>
-                            <div class="caption">
-                                <h3>Jenn Gwapa</h3>
-                                <p>CEO / Founder</p>
-                                <p>Do not seek to change what has come before. Seek to create that which has not.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-
-    <!-- Services Section
-    ==========================================-->
-    <div id="tf-services" class="text-center">
-        <div class="container">
-            <div class="section-title center">
-                <h2>Take a look at <strong>our services</strong></h2>
-                <div class="line">
-                    <hr>
-                </div>
+      <div class="col-sm-6 col-md-3 col-lg-3 branding">
+        <div class="portfolio-item">
+          <div class="hover-bg">
+            <a href="#">
+              <div class="hover-text">
+                <h4>Logo Design</h4>
+                <small>Branding</small>
                 <div class="clearfix"></div>
-                <small><em>Mjenzi is made up of dedicated project managers and developers who will take you through your customer journey as you specify. We have interests in developing scalable businesses and being at the forefront of the smartest technologies.</em></small>
-            </div>
-            <div class="space"></div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 service">
-                    <a href="/web-application-development">
-                        <i class="fa fa-desktop"></i>
-                        <h4><strong>Web design</strong></h4>
-                    </a>
-                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                </div>
-
-                <div class="col-md-3 col-sm-6 service">
-                     <a href="/internet-of-things"><i class="fa fa-mobile"></i>
-                    <h4><strong>Mobile Apps</strong></h4>
-                     </a>
-                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                </div>
-
-                <div class="col-md-3 col-sm-6 service">
-                     <a href="/digital-strategy-consulting"><i class="fa fa-camera"></i>
-                    <h4><strong>Photography</strong></h4>
-                     </a>
-                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                </div>
-
-                <div class="col-md-3 col-sm-6 service">
-                    <a href="/big-data-analytics">
-                        <i class="fa fa-bullhorn"></i>
-                        <h4><strong>Marketing</strong></h4>
-                    </a>
-                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                </div>
-            </div>
+                <i class="fa fa-plus"></i>
+              </div>
+              <%= image_tag 'portfolio/01.jpg', class: "img-responsive", alt: "..." %>
+            </a>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- Clients Section
-    ==========================================-->
-    <div id="tf-clients" class="text-center">
-        <div class="overlay">
-            <div class="container">
-
-                <div class="section-title center">
-                    <h2>Some of <strong>our Clients</strong></h2>
-                    <div class="line">
-                        <hr>
-                    </div>
-                </div>
-                <div id="clients" class="owl-carousel owl-theme">
-                    <%  (1..7).each do |item| %>
-                        <div class="item">
-                            <%= image_tag "client/0#{item}.png" %>
-                        </div>
-                    <% end %>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Section
-    ==========================================-->
-    <div id="tf-works">
-        <div class="container"> <!-- Container -->
-            <div class="section-title text-center center">
-                <h2>Take a look at <strong>our services</strong></h2>
-                <div class="line">
-                    <hr>
-                </div>
+      <div class="col-sm-6 col-md-3 col-lg-3 photography app">
+        <div class="portfolio-item">
+          <div class="hover-bg">
+            <a href="#">
+              <div class="hover-text">
+                <h4>Logo Design</h4>
+                <small>Branding</small>
                 <div class="clearfix"></div>
-                <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>
-            </div>
-            <div class="space"></div>
+                <i class="fa fa-plus"></i>
+              </div>
+              <%= image_tag 'portfolio/02.jpg', class: "img-responsive", alt: "..." %>
+            </a>
+          </div>
+        </div>
+      </div>
 
-            <div class="categories">
-                
-                <ul class="cat">
-                    <li class="pull-left"><h4>Filter by Type:</h4></li>
-                    <li class="pull-right">
-                        <ol class="type">
-                            <li><a href="#" data-filter="*" class="active">All</a></li>
-                            <li><a href="#" data-filter=".web">Web Design</a></li>
-                            <li><a href="#" data-filter=".photography">Photography</a></li>
-                            <li><a href="#" data-filter=".app" >Mobile App</a></li>
-                            <li><a href="#" data-filter=".branding" >Branding</a></li>
-                        </ol>
-                    </li>
-                </ul>
+      <div class="col-sm-6 col-md-3 col-lg-3 branding">
+        <div class="portfolio-item">
+          <div class="hover-bg">
+            <a href="#">
+              <div class="hover-text">
+                <h4>Logo Design</h4>
+                <small>Branding</small>
                 <div class="clearfix"></div>
-            </div>
-
-            <div id="lightbox" class="row">
-
-                <div class="col-sm-6 col-md-3 col-lg-3 branding">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <%= image_tag 'portfolio/01.jpg', class: "img-responsive", alt: "..."%>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 photography app">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <%= image_tag 'portfolio/02.jpg', class: "img-responsive", alt: "..."%>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 branding">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                              <%= image_tag 'portfolio/03.jpg', class: "img-responsive", alt: "..."%>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 branding">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <%= image_tag 'portfolio/04.jpg', class: "img-responsive", alt: "..."%>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 web">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <%= image_tag 'portfolio/05.jpg', class: "img-responsive", alt: "..."%>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 app">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <%= image_tag 'portfolio/06.jpg', class: "img-responsive", alt: "..."%>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 photography web">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <%= image_tag 'portfolio/07.jpg', class: "img-responsive", alt: "..."%>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 web">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                               <%= image_tag 'portfolio/08.jpg', class: "img-responsive", alt: "..."%>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+                <i class="fa fa-plus"></i>
+              </div>
+              <%= image_tag 'portfolio/03.jpg', class: "img-responsive", alt: "..." %>
+            </a>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- Testimonials Section
-    ==========================================-->
- <!--    <div id="tf-testimonials" class="text-center">
-        <div class="overlay">
-            <div class="container">
-                <div class="section-title center">
-                    <h2><strong>Our clients’</strong> testimonials</h2>
-                    <div class="line">
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div id="testimonial" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
-                                <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
-                            </div>
-
-                            <div class="item">
-                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
-                                <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
-                            </div>
-
-                            <div class="item">
-                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
-                                <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="col-sm-6 col-md-3 col-lg-3 branding">
+        <div class="portfolio-item">
+          <div class="hover-bg">
+            <a href="#">
+              <div class="hover-text">
+                <h4>Logo Design</h4>
+                <small>Branding</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-plus"></i>
+              </div>
+              <%= image_tag 'portfolio/04.jpg', class: "img-responsive", alt: "..." %>
+            </a>
+          </div>
         </div>
-    </div>
- -->
-    <!-- Contact Section
-    ==========================================-->
-    <div id="tf-contact" class="text-center">
-        <div class="container">
+      </div>
 
+      <div class="col-sm-6 col-md-3 col-lg-3 web">
+        <div class="portfolio-item">
+          <div class="hover-bg">
+            <a href="#">
+              <div class="hover-text">
+                <h4>Logo Design</h4>
+                <small>Branding</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-plus"></i>
+              </div>
+              <%= image_tag 'portfolio/05.jpg', class: "img-responsive", alt: "..." %>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-3 col-lg-3 app">
+        <div class="portfolio-item">
+          <div class="hover-bg">
+            <a href="#">
+              <div class="hover-text">
+                <h4>Logo Design</h4>
+                <small>Branding</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-plus"></i>
+              </div>
+              <%= image_tag 'portfolio/06.jpg', class: "img-responsive", alt: "..." %>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-3 col-lg-3 photography web">
+        <div class="portfolio-item">
+          <div class="hover-bg">
+            <a href="#">
+              <div class="hover-text">
+                <h4>Logo Design</h4>
+                <small>Branding</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-plus"></i>
+              </div>
+              <%= image_tag 'portfolio/07.jpg', class: "img-responsive", alt: "..." %>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-3 col-lg-3 web">
+        <div class="portfolio-item">
+          <div class="hover-bg">
+            <a href="#">
+              <div class="hover-text">
+                <h4>Logo Design</h4>
+                <small>Branding</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-plus"></i>
+              </div>
+              <%= image_tag 'portfolio/08.jpg', class: "img-responsive", alt: "..." %>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+-->
+
+<!-- Testimonials Section
+==========================================-->
+<!--    <div id="tf-testimonials" class="text-center">
+       <div class="overlay">
+           <div class="container">
+               <div class="section-title center">
+                   <h2><strong>Our clients’</strong> testimonials</h2>
+                   <div class="line">
+                       <hr>
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="col-md-8 col-md-offset-2">
+                       <div id="testimonial" class="owl-carousel owl-theme">
+                           <div class="item">
+                               <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
+                               <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
+                           </div>
+
+                           <div class="item">
+                               <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
+                               <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
+                           </div>
+
+                           <div class="item">
+                               <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
+                               <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+-->
+<!-- Contact Section
+==========================================-->
+<div id="tf-contact">
+  <div class="container">
+
+
+      <div class="row">
+
+        <div class="section-title center text-center">
+          <h2><strong>contact</strong></h2>
+          <div class="line">
+            <hr>
+          </div>
+          <div class="clearfix"></div>
+          <small>
+            <em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of
+              Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+              during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line
+              in section 1.10.32.</em></small>
+        </div>
+
+
+        <div class="col-md-6 contact-info">
+          <h4><strong>contact us at Mjenzi</strong></h4>
+          <ul>
+
+            <li>
+              <span class="glyphicon glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+              <span class="glyphicon-text">Sydney, 2000, NSW</span>
+
+            </li>
+
+            <li>
+              <span class="glyphicon glyphicon glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+              <span class="glyphicon-text">+61-</span>
+            </li>
+            <li>
+
+              <span class="glyphicon glyphicon glyphicon glyphicon-envelope" aria-hidden="true"></span>
+              <span class="glyphicon-text">info@mjenzi.com</span>
+            </li>
+          </ul>
+
+
+        </div>
+
+        <div class="col-md-6 contact-form">
+          <h4><strong>Send us a message</strong></h4>
+
+          <form action="contact_message" method="POST" id="contact_message_form">
+            <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
 
-                    <div class="section-title center">
-                        <h2><strong>contact us at Mjenzi</strong></h2>
-                        <div class="line">
-                            <hr>
-                        </div>
-                        <div class="clearfix"></div>
-                        <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>            
-                    </div>
-
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Message</label>
-                            <textarea class="form-control" rows="3"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn tf-btn btn-default">Submit</button>
-                    </form>
-
+              <div class="col-md-6">
+                <div class="form-group required">
+                  <label for="contact-name">Name</label>
+                  <input type="text" name="contact_name" class="form-control" placeholder="Full Name" id="contact-name" required placeholder="">
                 </div>
+
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group required">
+                  <label for="contact-email">Email address</label>
+                  <input type="email" name="contact_email" class="form-control" id="contact-email" required placeholder="Enter email">
+                </div>
+              </div>
             </div>
 
+
+            <div class="form-group required">
+              <label for="contact-message">Message</label>
+              <textarea class="form-control" name="contact_message" id="contact-message" required rows="3"></textarea>
+            </div>
+            <div style="display:none" class="alert" id="after-send-message" role="alert">...</div>
+            <button type="submit" data-loading-text="Please Wait..." class="btn tf-btn btn-default">Submit</button>
+          </form>
+
         </div>
+
+
+      </div>
+
+    <div class="row">
+        <div class="col-md-12 contact-map">
+
+          <style>
+            #map {
+              height: 400px;
+              width: 100%;
+            }
+          </style>
+          <div id="map"></div>
+          <script>
+            function initMap() {
+              var uluru = {lng: 151.211793, lat: -33.870898};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: uluru
+              });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+              });
+            }
+          </script>
+          <script async defer
+                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ9O1j1GX9FsK2MPNGCAZsJD4LwhUfgW4&callback=initMap">
+          </script>
+
     </div>
 
+  </div>
+</div>

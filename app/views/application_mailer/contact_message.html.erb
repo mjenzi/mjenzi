@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+<p>Dear Admin,A contact message has been received from "<%= @user["contact_name"] %>" - <%=@user["contact_email"] %> from the website</p>
+<p>The message content is as below: </p>
+<p>
+  <%= @user["contact_message"] %>
+</p>
+
+</body>
+</html>

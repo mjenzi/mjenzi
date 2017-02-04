@@ -4,27 +4,68 @@
 //
 //
 
+
+$(document).ready(function () {
+    //navigation smooth sliding
+    $('a.page-scroll').click(function() {
+        console.log("why not here ??????");
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top - 40
+                }, 900);
+                return false;
+            }
+        }
+    });
+
+    //send contact-message ajax
+
+    $("#contact_message_form").submit(function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: "/contact_message",
+            type: "POST",
+            data: $(this).serialize(),
+            dataType: "json",
+            beforeSend: function(){
+                $(".tf-btn").button('loading');
+            },
+            success: function(payload){
+                // console.log(payload);
+            },
+            error: function (payload) {
+                // console.log(payload);
+
+            },
+        complete:function(payload){
+            payload = payload.responseJSON;
+            if(payload.status){
+                $("#after-send-message").addClass("alert-success");
+                $("#contact_message_form")[0].reset();
+
+            }else{
+                $("#after-send-message").addClass("alert-danger");
+            }
+            $("#after-send-message").html(payload.message).show();
+             $(".tf-btn").button("reset");
+        }
+
+
+        });
+    })
+
+
+});
+
 function main() {
 
 (function () {
+    console.log("document loaded");
    'use strict';
 
-   /* ==============================================
-  	Testimonial Slider
-  	=============================================== */ 
-
-  	$('a.page-scroll').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top - 40
-            }, 900);
-            return false;
-          }
-        }
-      });
 
     /*====================================
     Show Menu on Book
@@ -50,7 +91,9 @@ function main() {
   	      slideSpeed : 300,
   	      paginationSpeed : 400,
   	      autoHeight : true,
-  	      itemsCustom : [
+          items: 2,
+
+  	      /*itemsCustom : [
 				        [0, 1],
 				        [450, 2],
 				        [600, 2],
@@ -60,6 +103,7 @@ function main() {
 				        [1400, 4],
 				        [1600, 4]
 				      ],
+				      */
   	  });
 
   	  $("#clients").owlCarousel({

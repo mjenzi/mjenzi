@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get 'digital-strategy-consulting' => 'application#digital', as: :digital
   get 'big-data-analytics' => 'application#bigData', as: :big_data
 
+  post 'contact_message' => 'application#contact_message'
+
 end

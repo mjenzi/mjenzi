@@ -478,6 +478,8 @@ ol.type li a.active { font-weight: 700; }
 	color: #d1d1d1;
 }
 /* Contact Section */
+
+/*
 #tf-contact{
 	padding: 80px 0;
 }
@@ -512,6 +514,7 @@ label {
 	-webkit-box-shadow: transparent;
 	box-shadow: transparent;
 }
+*/
 
 button.btn.tf-btn.btn-default {
 	float: right;
@@ -574,4 +577,32 @@ nav#footer p{
 .service-container {
 	top: 20px;
 	margin-top: 75px;
+}
+
+.contact-info ul{
+  list-style: none;
+}
+
+.contact-info li{
+  padding:2px 0;
+  font-size: 16px;
+}
+
+.contact-info .glyphicon{
+  font-size: 20px;
+  color: #fcac45;
+}
+
+.form-group.required label:after {
+  content:"*";
+  color:red;
+  padding: 0px 0px 0 2px;
+  font-weight: 900;
+}
+.glyphicon-text{
+  margin-left: 5px;
+}
+
+.contact-map{
+  padding:5px 0;
 }
