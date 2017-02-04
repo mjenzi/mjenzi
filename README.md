@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# mjenzi
+Company Profile
+>>>>>>> d12907f0554b35e0ee4e8c2836fe717700703394
