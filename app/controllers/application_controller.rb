@@ -4,23 +4,22 @@ class ApplicationController < ActionController::Base
   	render "index.html"
   end
   def webDesign
-  	@service = getService('Web Design')
-  	render "services.html"
+  	# @service = getService('Web Design')
   end
 
   def internet
   	@service = getService('Internet of Things')
-  	render "services.html"
+  	# render "services.html"
   end
 
   def digital
   	@service = getService('Digital Strategy Consulting ')
-  	render "services.html"
+  	# render "services.html"
   end
 
   def bigData
-  	@service = getService('Big Data Analytics.')
-  	render "services.html"
+  	# @service = getService('Big Data Analytics.')
+  	# render "services.html"
   end
 
   def getService(name)
