@@ -64,12 +64,12 @@ Rails.application.configure do
       :address        => ENV['MAILGUN_SMTP_SERVER'],
       :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
       :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-      :domain         => 'http://mjenzi.herokuapp.com/',
+      :domain         => 'http://mjenzi.com/',
       :authentication => :plain,
   }
   ActionMailer::Base.delivery_method = :smtp
 
-  # Ignore bad email addresses and do not raise email delivery errors.
+  # Ignore bad email addresses and do not raise email delivery errors. 
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
 
