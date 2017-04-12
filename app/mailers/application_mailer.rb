@@ -1,5 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'info@mjenzi.com.com',to: "nirojsapkota15@gmail.com" #to: "info@mjenzi.com"
+  default from: 'info@mjenzi.com',to: "kinyua@mjenzi.com" #to: "info@mjenzi.com"
   layout 'mailer'
 
   def contact_message(user)
