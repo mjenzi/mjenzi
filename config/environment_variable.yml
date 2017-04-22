@@ -1,7 +1,15 @@
 development:
+  PORT: 587
+  SERVER: smtp.gmail.com
+  LOGIN: nirojsapkota15@gmail.com
+  PASSWORD: eaaqixiaqfsqlzcm
+  DOMAIN: gmail.co
 
 production:
-  MAILGUN_SMTP_PORT: 587
-  MAILGUN_SMTP_SERVER: smtp.mailgun.org
-  MAILGUN_SMTP_LOGIN: postmaster@mjenzi.com
-  MAILGUN_SMTP_PASSWORD: cd468d69b84961dc8df941ddbd04c615
+  PORT: 587
+  SERVER: smtp.mailgun.org
+  LOGIN: postmaster@mg.mjenzi.com
+  PASSWORD: b0f466a61a1cf881cc6893d33686dd8a
+  DOMAIN: http://mg.mjenzi.com
+
+
