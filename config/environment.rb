@@ -4,7 +4,7 @@ require_relative 'application'
 # Initialize the Rails application.
 Rails.application.initialize!
 
-SMTP_CRED = YAML.load_file(Rails.root.join("config/environment_variable.yml"))['production']
+SMTP_CRED = YAML.load_file(Rails.root.join("config/environment_variable.yml"))[Rails.env]
 ActionMailer::Base.smtp_settings = {
     :port           => SMTP_CRED['PORT'],
     :address        => SMTP_CRED['SERVER'],
