@@ -11,5 +11,3 @@ production:
   LOGIN: postmaster@mg.mjenzi.com
   PASSWORD: b0f466a61a1cf881cc6893d33686dd8a
   DOMAIN: http://mg.mjenzi.com
-
-
