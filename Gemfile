@@ -9,7 +9,7 @@ group :development, :test do # <<<< :development, not devlopment
 end
 group :production do
   #niroj removed this for development :issue installing pg
-gem 'pg'
+  gem 'pg'
   gem 'rails_12factor'
 end
 # Use Puma as the app server
