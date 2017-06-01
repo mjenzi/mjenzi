@@ -1,9 +1,4 @@
 development:
-#  PORT: 587
-#  SERVER: smtp.gmail.com
-#  LOGIN: nirojsapkota15@gmail.com
-#  PASSWORD: eaaqixiaqfsqlzcm
-#  DOMAIN: gmail.com
    PORT: 587
    SERVER: smtp.mailgun.org
    LOGIN: postmaster@mg.mjenzi.com
@@ -12,11 +7,6 @@ development:
  
 
 production:
-#  PORT: 587
-#  SERVER: smtp.gmail.com
-#  LOGIN: nirojsapkota15@gmail.com
-#  PASSWORD: eaaqixiaqfsqlzcm
-#  DOMAIN: gmail.com
    PORT: 587
    SERVER: smtp.mailgun.org
    LOGIN: postmaster@mg.mjenzi.com
