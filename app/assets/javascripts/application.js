@@ -13,8 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrap-sprockets
-//= require SmoothScroll.js
-//= require jquery.isotope.js
-//= require owl.carousel.js
-//= require main.js
+//= require popper.min
+//= require_tree 

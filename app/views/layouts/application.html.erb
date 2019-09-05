@@ -1,36 +1,26 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+
   <head>
-    <title>Mjenzi :: Ruby on Rails | Digital | IoT | Big Data</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+     crossorigin="anonymous">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <%= csrf_meta_tags %>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag asset_path('mjenzi_logo.jpg'), :rel => 'icon', :type =>  'image/png', sizes: "57x57" %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
+    <title>Mjenzi :: Ruby on Rails | Digital | IoT | Big Data</title>
   </head>
-
+  
   <body>
-    <%= yield(:nav) %>
-
+    <%=render 'shared/header'%>
     <%= yield %>
-
-    <nav id="footer">
-        <div class="container">
-            <div class="pull-left fnav">
-                <p>ALL RIGHTS RESERVED. COPYRIGHT © 2017. BUILT AND DESIGNED AT MJENZI ON RUBY 2.3.1 AND RAILS 5.0. BUILD TIME=1 DAY! <a href="https://mjenzi.com"</a> </p>
-            </div>
-            <div class="pull-right fnav">
-                <ul class="footer-social">
-                    <li><a href="https://www.facebook.com/mjenzi"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://linkedin.com/company/mjenzi-pty-ltd"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/mjenzi"><i class="fa fa-github-square"></i></a></li>
-                    <li><a href="https://twitter.com/mjenzi_tech"><i class="fa fa-twitter"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    <%=render 'shared/footer'%>
   </body>
 </html>

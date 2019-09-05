@@ -1,0 +1,32 @@
+<div class="loader"></div>
+<header id="top">
+	<nav class="navbar navbar-expand-lg navbar-light my-menu" id="navbar">
+		<div class="container">
+			<h1 id="logo">
+				<%=image_tag 'mjenzi_logo.jpg', alt: ' logo', class: 'logo-custom' %>
+			</h1>
+			<div class="mene-btn"><button class="menu-button" id="open-button"></button></div>
+      <div class="menu-wrap">
+              <button class="close-button" id="close-button">Close Menu</button>
+			<div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<%=link_to  "Home", root_path, title: "Home" %>
+					</li>
+					<li>
+						<%=link_to  "About", about_path, title: "About Us"%>
+					</li>
+					<li>
+						<%=link_to  "Team", team_path, title: "Team" %>
+					</li>
+					<li>
+						<%=link_to  "Services", services_path, title: "Services" %>
+					</li>
+					<li>
+						<%=link_to  "Contact", contacts_path, title: "Contact" %>
+					</li>
+				</ul>
+			</div></div>
+		</div>
+	</nav>
+</header>

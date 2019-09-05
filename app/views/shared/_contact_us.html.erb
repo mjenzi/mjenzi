@@ -1,0 +1,39 @@
+<div id="sucess_msg"></div>
+<%= form_for @contact, url: contact_message_path, :html => {:id=>"main-contact-form", :name=>"contact-form", class: 'contact-form'} do |f| %>
+  <div id="con"></div>
+  <div class="row">
+		<div class="col-6 col-sm-6 col-md-6">
+			<div class="form-group">
+				<i class="fas fa-user icon-span"></i>
+				<%= f.text_field :name, :required => true, :class=>"form-control", :placeholder=>"Name" %>
+			</div>
+		</div>
+  	<div class="col-6 col-sm-6 col-md-6">
+			<div class="form-group">
+				<i class="fas fa-envelope icon-span"></i>
+  			<%= f.email_field :email, :required => true,:class=>"form-control", :placeholder=>"Email" %>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-6 col-sm-6 col-md-6">
+			<div class="form-group">
+				<i class="fas fa-file-alt icon-span"></i>
+				<%= f.text_field :subject, :class=>"form-control", :placeholder=>"Subject" %>
+			</div>
+		</div>
+		<div class="col-6 col-sm-6 col-md-6">
+			<div class="form-group">
+				<i class="fas fa-phone icon-span"></i>
+				<%= f.text_field :phone_number, :class=>"form-control", :placeholder=>"Phone Number" %>
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<i class="fas fa-comments icon-span"></i>
+		<%= f.text_area :message, :as => :text, :required => true, :class=>"form-control", rows: "5", cols: "100", :placeholder=>"Message" %>
+	</div>
+	<div class="form-group p-t30">
+		<%= f.submit 'Send message' %>
+	</div>
+<% end %>
