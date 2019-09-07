@@ -21,16 +21,15 @@ class ApplicationController < ActionController::Base
   def faq
   end
 
-  def getService(name)
-  	return {image: "02.png",name: name,tagline:"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sint rem inventore est reprehenderit voluptatum, placeat delectus dolore quam ab ea, illum omnis! Laboriosam neque accusantium ex aliquam, reiciendis, quo."}
-  end
+  # def getService(name)
+  # 	return {image: "02.png",name: name,tagline:"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sint rem inventore est reprehenderit voluptatum, placeat delectus dolore quam ab ea, illum omnis! Laboriosam neque accusantium ex aliquam, reiciendis, quo."}
+  # end
 
 
   def about
   end
 
   def services
-    @service = getService('Big Data Analytics.')
   end
 
   
