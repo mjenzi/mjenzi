@@ -1,10 +1,8 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   # before_action :authenticate_user!
+   layout :layout_by_resource
 
-  #def index
-  # 	render "index.html"
-  # end
   def webDesign
   end
 
@@ -57,6 +55,17 @@ class ApplicationController < ActionController::Base
       notice = "An error occurred."
     end
     redirect_to contacts_path, notice: notice
+  end
+
+
+  private
+
+  def layout_by_resource
+    if devise_controller?
+      "admin"
+    else
+      "application"
+    end
   end
 
 end
