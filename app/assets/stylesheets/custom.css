@@ -293,58 +293,6 @@ span.icon {
 }
 /*----------------------------------------------------------------------------------SEC SERVICE END*/
 
-/*----------------------------------------------------------------------------------SEC PORT START*/
-.sec-portfolio{
-    background-color: #f9f9f9;
-}
-.porfolioContent{
-    margin: 2px; 
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-    -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; transition: all 0.2s ease-out; 
-}
-.porfolioContent a{
-    position: relative;
-    display: block;
-} 
-.porfolioContent .porfolioImg img{
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-}
-.porfolioContent .porfolioheading{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top:100%;
-    position: absolute;
-    padding: 15px;
-    background-color: rgba(255, 81, 38, 0.8);
-    -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; transition: all 0.2s ease-out; 
-    
-}
-.porfolioContent .porfolioheading h4{
-    color: #FFF;
-    top:50%;
-    left: 50%;
-    width: 100%;
-    font-size: 22px;
-    transform: translate(-50%,-50%);
-    position: absolute;
-    text-align: center;
-}
-.porfolioContent .porfolioheading h4 span{
-    display: block;
-    font-size: 18px;
-}
-.rowPortfolio{
-    margin-top: 40px;
-}
-.porfolioContent:hover .porfolioheading{
-    top:0px;
-}
-
 /*----------------------------------------------------------------------------------SEC PORT END*/
 /*----------------------------------------------------------------------------------SEC FAQ START*/
 #accordion h5{
