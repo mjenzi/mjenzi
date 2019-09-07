@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   get 'digital-strategy-consulting' => 'application#digital', as: :digital
   get 'big-data-analytics' => 'application#bigData', as: :big_data
 
-
-
+  get 'faq' => 'application#faq'
+  get 'cloud_solutions' => 'application#cloud_solutions'
   get 'about' => 'application#about'
   get 'services' => 'application#services'
   get 'team' => 'application#team'

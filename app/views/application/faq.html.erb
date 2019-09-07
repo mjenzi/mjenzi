@@ -1,0 +1,178 @@
+<article>
+	<div class="innerContent">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-7 col-lg-7">
+					<br><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+					<h2>
+						<span>FAQs</span>
+					</h2>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+		        <div class="panel panel-default">
+		          <div class="panel-heading" role="tab" id="headingOne">
+		            <h4 class="panel-title">
+		                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		                    <i class="more-less glyphicon glyphicon-plus"></i>
+		                    <h4><b>Instances FAQs</b></h4>
+		                </a>
+		            </h4>
+		          </div>
+		            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+		              <div class="panel-body">
+		              	<h5>• Which operarating systems do you offer?</h5>
+							        ◦ The platform includes templates for CentOS, Debian, FreeBSD, Ubuntu LTS, Windows Server 2008 R2, Windows Server 2012 R2, and Windows Server 2016.
+							        ◦ We also offer VyOS for software defined networking, VPN access, firewalling and building more complex topologies.
+								    <h5> • Can I optimise my instance for specific workloads?</h5>
+								      ◦ Yes. All our instances scale their virtual CPU count and weights with allocated memory to offer the best performance. If your workloads are specifically memory or CPU intensive, instances can be created with “High CPU” or “High Memory” to scale straight on the Platform.
+								    <h5> • Can I create my own templates based on other instances?</h5>
+								      ◦ Yes. By using the Clone feature on the Disks screen, you can create multiple instances from the same base disk in our Platform. You can then use the Advanced Create feature to create new instances using those cloned disks.
+								    <h5> • Can I create my own operating system templates?</h5>
+								      ◦ Yes, however, all network and storage configuration must be performed manually, and the resulting image will only be supported for external issues (as we can’t know the inner state of the instance). For custom templates, we support booting from ISO images to make this easier.
+								    <h5> • Can I perform software updates on instances?</h5>
+								      ◦ Yes. In fact, this is encouraged to perform security updates, get the latest versions of server software and the most recent revision of our context system. Instances are entirely virtualized, so kernel updates can be performed.
+		              </div>
+		            </div>
+		        </div>
+
+		        <div class="panel panel-default">
+		          <div class="panel-heading" role="tab" id="headingTwo">
+		            <h4 class="panel-title">
+		              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		                  <i class="more-less glyphicon glyphicon-plus"></i>
+		                  <h4><b>Network FAQs</b></h4>
+		              </a>
+		            </h4>
+		          </div>
+		          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+	              <div class="panel-body">
+	                <h5>• What is this platform context sytem repository on my Linux or FreeBSD </h5>
+        						◦ The context system is used to live–define the networking and storage of your instance. Whenever a context system update is required, a new package will automatically be made for your instance to install. This can be performed as part of your regular system updates.
+        					<h5>• How much does network transit cost between two instances?</h5>
+						        ◦ If the private network is used, data transferred between two instances is free. 
+						        ◦ If public interfaces are used, regular internet transit costs apply.
+							    <h5>• Is instance console access out-of-band?</h5>
+							      ◦ Yes. Even if an instance has no networking enabled, or a firewall rule preventing you accessing it through SSH or RDP, you can access the VNC or serial console for that instance.
+							    <h5>• What is private networking really?</h5>
+						        ◦ Each customer is provided their own private, segmented network, which operates like a VLAN. 
+						        ◦ When an instance is created using Quick Create, the instance is provided a public and private IP address. 
+						        ◦ Custom private IPs can also be created and attached to stopped and running instances at any time on the Platform.
+							    <h5>• Why would I use private networking?</h5>
+						        ◦ As mentioned above, transit between instances over private networks is free. 
+						        ◦ A common scenario is to assign a public IP to a VyOS software-defined-networking instance, then use it as the default route over private network interfaces to other instances. This allows the VyOS instance to operate as a firewall. 
+						        ◦ Another common use case is for backups to an instance backed by archival storage.
+							    <h5>• Can I live attach and detach IP addresses?</h5>
+							      ◦ Absolutely. Allocated public and private IP addresses can be live attached to any running instance, and are assigned to the instance’s virtual NICs within seconds. 
+						        ◦ This means any attached IP can accept traffic almost immediately after being attached. 
+						        ◦ VyOS router instances require manual NIC configuration after IP addresses are live attached or detached, so as to not trample any complex topology or network configuration you may have defined. 
+							  </div>
+		          </div>
+		        </div>
+
+		        <div class="panel panel-default">
+		            <div class="panel-heading" role="tab" id="headingThree">
+	                <h4 class="panel-title">
+	                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+	                      <i class="more-less glyphicon glyphicon-plus"></i>
+	                      <h4><b>Storage FAQs</b></h4>
+	                  </a>
+	                </h4>
+		            </div>
+		            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+		              <div class="panel-body">
+		                <h5>• How does the self-healing storage replication system work?</h5>
+							        ◦ Whenever a disk is created in our DSAN, the device’s backing blocks are distributed and replicated across multiple nodes in our cluster (over dual redundant 40Gbit QDR IB). 
+							        ◦ Node availability within the cluster is constantly monitored by our SDS system to ensure prescribed levels of data replication are consistently maintained. 
+							        ◦ If our SDS detects that a node is either having issues or is offline, data replication of the missing blocks to other nodes within the cluster begins immediately, thereby maintaining prescribed levels of data replication. 
+							        ◦ When the original node is recovered, any changes made to storage are automatically updated and replicated – this entire process of replicating storage after an event is entirely automatic, requiring no user involvement.
+						    	<h5>• What backups do you provide?</h5>
+						        ◦ Our built in system for backups is disk cloning. 
+						        ◦ These can be performed at any time, even if a server is running (though the usual caveats about copying production server data applies).
+						    	<h5>• How quickly can I clone  a disk?</h5>
+						        ◦ Within seconds. 
+						        ◦ The distributed, replicated block storage allows for rapid cloning of disks. 
+						        ◦ These cloned disks can be stored for later use, or attached to new cloud instances and used as soon as they’re made available from the Platform panel.
+						    	<h5>• Can I live attach or detach disks?</h5>
+						        ◦ Absolutely. Once created, a disk can be added to a running instance and used immediately. 
+						        ◦ There’s no need to shut down the instance to add a disk.
+						        ◦ The first/boot disk is the only one that can’t be live detached, for obvious reasons.
+						    	<h5>• Does the Platform support booting from ISO disks?</h5>
+						        ◦ Absolutely. You can image a CD-ROM ISO to a disk, flag it as a CD-ROM disk, and have it booting in an instance.
+						      <h5>• Is your storage SSD backed? What are your performance tiers?</h5>
+								      ◦ Storage is offered in three tiers.
+								    		• 1. High Performance, which uses pure SSD storage for high IOPS performance.
+								    		• 2. Standard, which uses spinning disks backed with an SSD cache. This achieves far greater IOPS performance than standard spinning disks, particularly for read-heavy workloads.
+								    		• 3. Archival, which just uses spinning disks is offered at a discounted rate. These are most useful for backups, long term storage or lighter workloads.
+								        • 4 All storage shares the same replicated, distributed Infiniband fabric, which offers significantly higher performance than industry standard SANs backed by ethernet.
+		              </div>
+		            </div>
+		        </div>
+
+		        <div class="panel panel-default">
+		            <div class="panel-heading" role="tab" id="headingFour">
+	                <h4 class="panel-title">
+	                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+	                      <i class="more-less glyphicon glyphicon-plus"></i>
+	                      <h4><b>Reseller Cloud FAQs</b></h4>
+	                  </a>
+	                </h4>
+		            </div>
+		            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+		              <div class="panel-body">
+		                <h5>• How does the self-healing storage replication system work?</h5>
+							        ◦ Whenever a disk is created in our DSAN, the device’s backing blocks are distributed and replicated across multiple nodes in our cluster (over dual redundant 40Gbit QDR IB). 
+							        ◦ Node availability within the cluster is constantly monitored by our SDS system to ensure prescribed levels of data replication are consistently maintained. 
+							        ◦ If our SDS detects that a node is either having issues or is offline, data replication of the missing blocks to other nodes within the cluster begins immediately, thereby maintaining prescribed levels of data replication. 
+							        ◦ When the original node is recovered, any changes made to storage are automatically updated and replicated – this entire process of replicating storage after an event is entirely automatic, requiring no user involvement.
+						    	<h5>• What backups do you provide?</h5>
+						        ◦ Our built in system for backups is disk cloning. 
+						        ◦ These can be performed at any time, even if a server is running (though the usual caveats about copying production server data applies).
+						    	<h5>• How quickly can I clone  a disk?</h5>
+						        ◦ Within seconds. 
+						        ◦ The distributed, replicated block storage allows for rapid cloning of disks. 
+						        ◦ These cloned disks can be stored for later use, or attached to new cloud instances and used as soon as they’re made available from the Platform panel.
+						    	<h5>• Can I live attach or detach disks?</h5>
+						        ◦ Absolutely. Once created, a disk can be added to a running instance and used immediately. 
+						        ◦ There’s no need to shut down the instance to add a disk.
+						        ◦ The first/boot disk is the only one that can’t be live detached, for obvious reasons.
+						    	<h5>• Does the Platform support booting from ISO disks?</h5>
+						        ◦ Absolutely. You can image a CD-ROM ISO to a disk, flag it as a CD-ROM disk, and have it booting in an instance.
+						      <h5>• Is your storage SSD backed? What are your performance tiers?</h5>
+								      ◦ Storage is offered in three tiers.
+								    		• 1. High Performance, which uses pure SSD storage for high IOPS performance.
+								    		• 2. Standard, which uses spinning disks backed with an SSD cache. This achieves far greater IOPS performance than standard spinning disks, particularly for read-heavy workloads.
+								    		• 3. Archival, which just uses spinning disks is offered at a discounted rate. These are most useful for backups, long term storage or lighter workloads.
+								        • 4 All storage shares the same replicated, distributed Infiniband fabric, which offers significantly higher performance than industry standard SANs backed by ethernet.
+		              </div>
+		            </div>
+		        </div>
+
+		        <div class="panel panel-default">
+		            <div class="panel-heading" role="tab" id="headingFive">
+	                <h4 class="panel-title">
+	                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+	                      <i class="more-less glyphicon glyphicon-plus"></i>
+	                      <h4><b>General FAQs</b></h4>
+	                  </a>
+	                </h4>
+		            </div>
+		            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+		              <div class="panel-body">
+		                <h5>• Do you have contract periods?</h5>
+								      ◦ We can define a contract term but we have flexible pay-as-you-go options for usage. You only pay for what you use.
+								    <h5>• Do you have free trial options? </h5>
+								       ◦ Yes – for resellers this is a week.
+								    <h5>• I chose the account type as “individual” when registered, how can I upgrade to “enterprise reseller” account?</h5>
+		              </div>
+		            </div>
+		        </div>
+    			</div><!-- panel-group -->
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
