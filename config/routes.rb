@@ -10,7 +10,6 @@ Rails.application.routes.draw do
   get 'cloud_solutions' => 'application#cloud_solutions'
   get 'about' => 'application#about'
   get 'services' => 'application#services'
-  get 'team' => 'application#team'
   get 'contacts' => 'application#contact'
   post 'contact_message' => 'application#contact_message'
   root to: 'welcome#index'

@@ -33,25 +33,29 @@ class ApplicationController < ActionController::Base
     @service = getService('Big Data Analytics.')
   end
 
-  def team
-  end
-
   
   def contact
     @contact = Contact.new
   end
   
 
-  #send message
+    #send message
   def contact_message
     @user = params
-    email_status = ApplicationMailer.contact_message(@user).deliver
-    respond_to do |format|
-      if email_status
-        format.json {render json: {status: true, message: "Message has been sent successfully."}}
-      else
-        format.json {render json: {status: false, message: "An error occurred."}}
-      end
+    notice =""
+    begin
+      email_status = ApplicationMailer.contact_message(@user).deliver
+    rescue Exception => e
+      email_status = false
     end
+    
+    
+    if email_status
+      notice = "Message has been sent successfully"
+    else
+      notice = "An error occurred."
+    end
+    redirect_to contacts_path, notice: notice
   end
+
 end
