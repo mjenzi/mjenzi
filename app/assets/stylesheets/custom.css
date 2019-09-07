@@ -1250,3 +1250,12 @@ html .navbar-collapse ul li + li{
 }
 
 article{padding-bottom: 30px;}
+
+.card-pricing.popular {
+    z-index: 1;
+    border: 3px solid #007bff;
+}
+.card-pricing .list-unstyled li {
+    padding: .5rem 0;
+    color: #6c757d;
+}

@@ -16,13 +16,13 @@
 		        <div class="panel panel-default">
 		          <div class="panel-heading" role="tab" id="headingOne">
 		            <h4 class="panel-title">
-		                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		                <a id="default_open" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 		                    <i class="more-less glyphicon glyphicon-plus"></i>
 		                    <h4><b>Instances FAQs</b></h4>
 		                </a>
 		            </h4>
 		          </div>
-		            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+		            <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
 		              <div class="panel-body">
 		              	<h5>• Which operarating systems do you offer?</h5>
 							        ◦ The platform includes templates for CentOS, Debian, FreeBSD, Ubuntu LTS, Windows Server 2008 R2, Windows Server 2012 R2, and Windows Server 2016.
@@ -123,31 +123,69 @@
 		            </div>
 		            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
 		              <div class="panel-body">
-		                <h5>• How does the self-healing storage replication system work?</h5>
-							        ◦ Whenever a disk is created in our DSAN, the device’s backing blocks are distributed and replicated across multiple nodes in our cluster (over dual redundant 40Gbit QDR IB). 
-							        ◦ Node availability within the cluster is constantly monitored by our SDS system to ensure prescribed levels of data replication are consistently maintained. 
-							        ◦ If our SDS detects that a node is either having issues or is offline, data replication of the missing blocks to other nodes within the cluster begins immediately, thereby maintaining prescribed levels of data replication. 
-							        ◦ When the original node is recovered, any changes made to storage are automatically updated and replicated – this entire process of replicating storage after an event is entirely automatic, requiring no user involvement.
-						    	<h5>• What backups do you provide?</h5>
-						        ◦ Our built in system for backups is disk cloning. 
-						        ◦ These can be performed at any time, even if a server is running (though the usual caveats about copying production server data applies).
-						    	<h5>• How quickly can I clone  a disk?</h5>
-						        ◦ Within seconds. 
-						        ◦ The distributed, replicated block storage allows for rapid cloning of disks. 
-						        ◦ These cloned disks can be stored for later use, or attached to new cloud instances and used as soon as they’re made available from the Platform panel.
-						    	<h5>• Can I live attach or detach disks?</h5>
-						        ◦ Absolutely. Once created, a disk can be added to a running instance and used immediately. 
-						        ◦ There’s no need to shut down the instance to add a disk.
-						        ◦ The first/boot disk is the only one that can’t be live detached, for obvious reasons.
-						    	<h5>• Does the Platform support booting from ISO disks?</h5>
-						        ◦ Absolutely. You can image a CD-ROM ISO to a disk, flag it as a CD-ROM disk, and have it booting in an instance.
-						      <h5>• Is your storage SSD backed? What are your performance tiers?</h5>
-								      ◦ Storage is offered in three tiers.
-								    		• 1. High Performance, which uses pure SSD storage for high IOPS performance.
-								    		• 2. Standard, which uses spinning disks backed with an SSD cache. This achieves far greater IOPS performance than standard spinning disks, particularly for read-heavy workloads.
-								    		• 3. Archival, which just uses spinning disks is offered at a discounted rate. These are most useful for backups, long term storage or lighter workloads.
-								        • 4 All storage shares the same replicated, distributed Infiniband fabric, which offers significantly higher performance than industry standard SANs backed by ethernet.
-		              </div>
+		               <h5>• What is the reseller wholesale Mjenzi Cloud solution?</h5>
+							        ◦ Mjenzi Wholesale Cloud is a hyperconverged hardware/software IaaS suite that enables service providers to set up and manage public, private, and hybrid cloud solutions on our partner’s proprietary, custom-built infrastructure stack. Our highly efficient and innovative architecture reduces the datacenter (power/hardware) footprint by over 50%, and is hosted in leading global datacenter locations, or, can be deployed in a client’s own datacenter/premises. 
+							        ◦ Channel partners now can launch a branded cloud offering in days, with rapid deployment of virtual servers running a range of operating systems (including Windows and Linux). 
+							        ◦ A robust 24/7 self-service web portal simplifies administration/configuration, and provides partners the ability to bill per second and easily/effectively scale IT services to meet the fluctuating demands of their end-users and/or customers. 
+							        ◦ In short, the Mjenzi Wholesale Cloud Platform is a complete, turnkey solution that delivers cost-savings, performance, and technical features that are unmatched by any other current cloud vendor/service.
+							    <h5>• What can I do with the reseller Mjenzi Cloud solution?</h5>
+						        ◦ As a service provider with us, you can
+					            ▪ Set up private, hybrid, or public clouds in minutes, using libraries of pre-configured, customizable virtual server templates; 
+					            ▪ Host multiple virtual servers with different operating systems in complete isolation from one another;
+					            ▪ Customize virtual servers, resources, templates, users, billing, and more through an intuitive control panel;
+					            ▪ Migrate virtual servers near-instantly to maximize use of server resources and minimize downtime for users;
+					            ▪ Scale to match demand and minimize cost;
+					            ▪ Save energy and make best use of available resources;
+					            ▪ Leverage out of the box, white-label support to easily re-brand the platform as their own, with custom domains, branding, and rate-cards.
+							    <h5>• What cloud resources can you bill for?</h5>
+						        ◦ You can bill for the following resources:
+							        ◦ Virtual Server resources: virtual servers memory and CPU, templates, customer networks
+							        ◦ Data Storage: disk size, performance tier, replica count.
+							        ◦ Network Resources: IP address, data received/sent, private cross-connects
+							        ◦ Backup Resources: backup storage, cross region storage
+							        ◦ You can set resource limits along with prices, configure trials and demo accounts, set max resource limits, and choose which regions and performance tiers your customers have access to in your cloud. 
+							    <h5>• How does the white-label functionality work?</h5>
+							       ◦ Explain
+							    <h5>• Can I use my own hardware?</h5>
+							       ◦ No.
+							    <h5>• Where is Mjenzi Mjenzi Cloud infrastructure located currently)</h5>
+							      ◦ Through our partnerships we offer instantly deployable cloud infrastructure to our customers from public point of presence in North America and Australia.
+									<h5>Our Public Points of Presence (PoPs)</h5>
+											Equinix ME1 – Melbourne, VIC, Australia – ME1 – Data Center SpecificationSheet
+											Equinix SY2 – Sydney, NSW, Australia – SY2 – Data Center Specification Sheet
+											Equinix SY3 – Sydney, NSW, Australia – SY3 – Data Center Specification Sheet
+											CoreSite SV1 – San Jose, CA, USA – SV1 – Data Center Specification Sheet
+											Equinix SV2 – Santa Clara, CA, USA – SV2 – Data Center Specification Sheet
+											AT&T DC1 – Ashburn, VA, USA – DC1 – Data Center Specification Sheet
+									<h5>Mjenzi Private and Hybrid Points of Presence (PoPs)</h5>
+									    • Mjenzi also offers global Private and Hybrid cloud deployments for customers wanting the fastest and easiest solution for deploying their own enterprise grade cloud platform in their own Data Center or on their own Network.
+									    • We are steadily expanding our global infrastructure across Public, Private and Hybrid PoPs to help our customers achieve lower latency, higher throughput, and to ensure that their data remains in the exact place they have specified.
+									    • As our customers grow their businesses, we will continue to provide cloud infrastructure services that meet their global requirements.
+
+								</div>
+		          </div>
+		        </div>
+
+		         <div class="panel panel-default">
+		            <div class="panel-heading" role="tab" id="headingSix">
+	                <h4 class="panel-title">
+	                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseFive">
+	                      <i class="more-less glyphicon glyphicon-plus"></i>
+	                      <h4><b>Wholesale Cloud Pricing</b></h4>
+	                  </a>
+	                </h4>
+		            </div>
+		            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+		              <div class="panel-body">
+		                <h5>• Cloud Security</h5>
+								    • How is security addressed by Mjenzi Cloud?
+								    • After years of working through the rigorous compliance requirements and customers demand, our main infrastructure partner has honed a set of best practices and internal procedures to successfully support high-traffic, mission-critical public, private, and hybrid cloud deployments. Please request our security statement to learn more.
+								        ◦ Physical Access
+								        ◦ Logical infrastructure
+								        ◦ Instance access
+								        ◦ Policy
+								    
+								   <h5>• Wholesale Cloud Partner Support and Marketing</h5>
 		            </div>
 		        </div>
 
